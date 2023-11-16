@@ -1,14 +1,15 @@
 
 import {Link, Outlet} from "react-router-dom";
+import MyButton from "./UI/MyButton.tsx";
 
 function DefaultLayout() {
     return (
         <>
             <div className="flex flex-col min-h-screen">
                 <header className="flex flex-col bg-[url('../src/assets/BannerPoet.jpg')] bg-cover">
-                    <div className="flex justify-between items-center h-20 bg-black bg-opacity-70">
+                    <div className="flex justify-between items-center h-16 bg-black bg-opacity-70">
                         <div className="mx-3">
-                            <span className="text-white font-extrabold font-mono">POET IN UKRAINE</span>
+                            <span className="text-white text-3xl font-caveat">Poet in Ukraine</span>
                         </div>
                         <div className="flex justify-around items-center">
                             <Link to={'/personal'}>
@@ -50,9 +51,7 @@ function DefaultLayout() {
                     <div className="flex flex-col justify-center items-center w-full text-center py-10">
                         <h1 className="text-white text-9xl font-caveat mb-3">Поет в Україні</h1>
                         <p className="text-white text-xl mb-6">Це українська платформа для поетів сучасників та цінувачів української поезії</p>
-                        <button className="w-40 h-16 border-4 text-white bg-black bg-opacity-30 hover:text-amber-500 hover:border-amber-500 ">
-                            Напиши свого вірша!
-                        </button>
+                        <MyButton>Напиши свого вірша</MyButton>
                     </div>
                     {/*/Banner*/}
                 </header>

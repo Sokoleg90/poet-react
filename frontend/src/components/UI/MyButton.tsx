@@ -7,7 +7,9 @@ interface MyButtonProps {
 function MyButton(props: MyButtonProps) {
     return (
         <>
-            <button className="mt-3 w-40 h-8 rounded bg-gray-800 text-white hover:bg-gray-200 hover:text-black">{props.children}</button>
+            <button className="inline-block px-3 py-1 border-2 rounded-lg text-white text-xl font-alice bg-black bg-opacity-30 hover:text-amber-500 hover:border-amber-500 ">
+                {props.children}
+            </button>
         </>
     );
 }
