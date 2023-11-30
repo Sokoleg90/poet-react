@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 function Index() {
     return (
         <>
-            <div className="flex justify-between items-center mt-5 mx-10">
+            <div className="flex justify-between items-center mt-5 mx-10 text-white">
                 <table className="border-collapse border-2 border-slate-900 w-2/3">
                     <thead>
                     <tr>

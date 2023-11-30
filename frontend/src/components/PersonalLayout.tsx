@@ -3,10 +3,10 @@ import {Link, Outlet} from "react-router-dom";
 function PersonalLayout() {
     return (
         <>
-            <div className="flex flex-col">
-            <header>
+            <div className="flex flex-col bg-gray-700">
+            <header className="flex flex-col">
                 <div className="flex flex-col">
-                    <div className="flex justify-between items-center h-16 bg-stone-800">
+                    <div className="flex justify-between items-center h-16 bg-black bg-opacity-70">
                         <div className="mx-3">
                             <Link to={'/'}>
                             <span className="text-white text-3xl font-caveat">Poet in Ukraine</span>
@@ -27,27 +27,27 @@ function PersonalLayout() {
                             </Link>
                         </div>
                     </div>
-                    <div className="flex justify-center items-center h-14 bg-stone-500">
+                    <div className="flex justify-center items-center h-14 bg-black bg-opacity-30">
                         <div className="lg:mx-16 sm:ml-7">
                             <Link to={''}>
-                                <span className="text-black font-alice hover:text-white lg:text-3xl sm:text-sm">Ваші дані</span>
+                                <span className="text-white font-alice hover:text-amber-500 lg:text-3xl sm:text-sm">Ваші дані</span>
                             </Link>
                         </div>
                         <div className="lg:mx-16 sm:ml-7">
                             <Link to={''}>
-                                <span className="text-black font-alice hover:text-white lg:text-3xl sm:text-sm">Ваші вірші</span>
+                                <span className="text-white font-alice hover:text-amber-500 lg:text-3xl sm:text-sm">Ваші вірші</span>
                             </Link>
                         </div>
                         <div className="lg:mx-16 sm:ml-7">
                             <Link to={''}>
-                                <span className="text-black font-alice hover:text-white lg:text-3xl sm:text-sm">Коментарі</span>
+                                <span className="text-white font-alice hover:text-amber-500 lg:text-3xl sm:text-sm">Коментарі</span>
                             </Link>
                         </div>
                     </div>
                 </div>
             </header>
 
-            <main className="bg-stone-300 min-h-screen">
+            <main className="min-h-screen">
                 <Outlet/>
             </main>
 
